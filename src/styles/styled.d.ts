@@ -9,6 +9,8 @@ declare module "styled-components" {
       "font-secondary": string;
       "success-color": string;
       "fail-color": string;
+      "border-primary": string;
+      "border-secondary": string;
     };
     breakpoints: {
       sm: string;
@@ -22,6 +24,7 @@ declare module "styled-components" {
         medium: string;
         large: string;
         xlarge: string;
+        xxlarge: string;
       };
       fontWeight: {
         light: string;

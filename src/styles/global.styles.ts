@@ -4,5 +4,6 @@ export const GlobalStyle = createGlobalStyle`
   body{
     font-family: ${({ theme }) => theme.typography.fontFamily};
     background: ${({ theme }) => theme.colors["bg-primary"]};
+    font-weight: ${({ theme }) => theme.typography.fontWeight.light};
   }
 `;

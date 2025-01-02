@@ -3,16 +3,18 @@ import { DefaultTheme } from "styled-components";
 const theme: DefaultTheme = {
   colors: {
     "bg-primary": "#f9f9f9",
-    "bg-secondary": "#1a1a1a",
+    "bg-secondary": "rgb(23, 21, 21)",
     "font-primary": "#000000",
     "font-secondary": "#ffffff",
     "success-color": "#28a745",
     "fail-color": "#dc3545",
+    "border-primary": "#000000",
+    "border-secondary": "#ffffff",
   },
 
   breakpoints: {
     sm: "480px",
-    md: "768px",
+    md: "800px",
     lg: "1024px",
   },
 
@@ -21,8 +23,9 @@ const theme: DefaultTheme = {
     fontSize: {
       small: "12px", // Small font size
       medium: "16px", // Medium font size
-      large: "20px", // Large font size
-      xlarge: "24px", // Extra large font size
+      large: "22px", // Large font size
+      xlarge: "26px", // Extra large font size
+      xxlarge: "32px", // Extra extra large font size
     },
     fontWeight: {
       light: "300", // Light font weight
