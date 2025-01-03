@@ -12,6 +12,7 @@ import SalesManagement from "./routes/sales-management/sales-management.componen
 import Reports from "./routes/reports/reports.component";
 import Analytics from "./routes/analytics/analytics.component";
 import Settings from "./routes/settings/settings.component";
+import Home from "./routes/home/home.component";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <GlobalStyle />
         <Routes>
           <Route path="/" element={<Navigation />}>
+            <Route index element={<Home />} />
             <Route path="trainees" element={<TraineeManagement />} />
             <Route path="equipment" element={<EquipmentManagement />} />
             <Route path="sales" element={<SalesManagement />} />

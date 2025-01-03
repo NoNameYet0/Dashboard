@@ -1,104 +1,75 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
-import FormInput from "../../components/form-input/form-input.component";
+
+import GymIcon from "../../assets/gym-weights-icon.svg?react";
+import TraineeIcon from "../../assets/trainee.svg?react";
+import EquipmentIcon from "../../assets/equipment.svg?react";
+import SalesIcon from "../../assets/sales.svg?react";
+import ReportsIcon from "../../assets/reports.svg?react";
+import AnalyticsIcone from "../../assets/analytics.svg?react";
+import SettingsIcon from "../../assets/settings.svg?react";
+
 import {
   MainContent,
+  NavContainer,
   NavBar,
-  NavBarUl,
-  SideNavBar,
   SideNavBarList,
+  LinksContainer,
 } from "./navigation.styles";
-import { useState } from "react";
 
 const Navigation = () => {
-  const [isSliderActive, setIsSliderActive] = useState(false);
-
   return (
-    <>
+    <NavContainer>
       <NavBar>
-        <span
-          className="side-bar-slider"
-          onClick={() => setIsSliderActive(!isSliderActive)}
-        >
-          Slider
-        </span>
-        <NavBarUl $active={isSliderActive}>
-          <li className="home-link">
-            <Link to={"/"}>Home</Link>
-          </li>
-          <li>
-            <NavLink to={"trainees"} className={"side-bar-nav-links"}>
-              Trainees
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to={"equipment"} className={"side-bar-nav-links"}>
-              Equipment
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to={"sales"} className={"side-bar-nav-links"}>
-              Sales
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to={"reports"} className={"side-bar-nav-links"}>
-              Reports
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to={"analytics"} className={"side-bar-nav-links"}>
-              Analytics
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to={"settings"} className={"side-bar-nav-links"}>
-              Settings
-            </NavLink>
-          </li>
-        </NavBarUl>
-        <FormInput />
-      </NavBar>
-      <SideNavBar>
         <SideNavBarList>
           <li className="home-link">
-            <Link to={"/"}>Home</Link>
+            <Link to={"/"}>
+              <GymIcon />
+            </Link>
           </li>
-          <li>
-            <NavLink to={"trainees"} className={"side-bar-nav-links"}>
-              Trainees
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to={"equipment"} className={"side-bar-nav-links"}>
-              Equipment
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to={"sales"} className={"side-bar-nav-links"}>
-              Sales
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to={"reports"} className={"side-bar-nav-links"}>
-              Reports
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to={"analytics"} className={"side-bar-nav-links"}>
-              Analytics
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to={"settings"} className={"side-bar-nav-links"}>
-              Settings
-            </NavLink>
-          </li>
+          <LinksContainer>
+            <li>
+              <NavLink to={"trainees"} className={"side-bar-nav-links"}>
+                <TraineeIcon className="svg-to-hide" />
+                <span>Trainees</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"equipment"} className={"side-bar-nav-links"}>
+                <EquipmentIcon className="svg-to-hide" />
+                <span>Equipment</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"sales"} className={"side-bar-nav-links"}>
+                <SalesIcon className="svg-to-hide" />
+                <span>Sales</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"reports"} className={"side-bar-nav-links"}>
+                <ReportsIcon className="svg-to-hide" />
+                <span>Reports</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"analytics"} className={"side-bar-nav-links"}>
+                <AnalyticsIcone className="svg-to-hide" />
+                <span>Analytics</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"settings"} className={"side-bar-nav-links"}>
+                <SettingsIcon className="svg-to-hide" />
+                <span>Settings</span>
+              </NavLink>
+            </li>
+          </LinksContainer>
         </SideNavBarList>
-      </SideNavBar>
+      </NavBar>
       <MainContent>
         <Outlet />
       </MainContent>
-    </>
+    </NavContainer>
   );
 };
 

@@ -13,8 +13,8 @@ const theme: DefaultTheme = {
   },
 
   breakpoints: {
-    sm: "480px",
-    md: "800px",
+    sm: "580px",
+    md: "925px",
     lg: "1024px",
   },
 
@@ -24,7 +24,7 @@ const theme: DefaultTheme = {
       small: "12px", // Small font size
       medium: "16px", // Medium font size
       large: "22px", // Large font size
-      xlarge: "26px", // Extra large font size
+      xlarge: "24px", // Extra large font size
       xxlarge: "32px", // Extra extra large font size
     },
     fontWeight: {
