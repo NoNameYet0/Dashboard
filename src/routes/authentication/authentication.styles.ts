@@ -8,7 +8,6 @@ import {
 export const AuthContainer = styled.div`
   ${CenteredFlexContainer}
   height: 100vh;
-  background-image: url("/images/gym-bg.jpg");
 `;
 
 export const AuthFormsContainer = styled.div`
