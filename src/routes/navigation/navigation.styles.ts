@@ -156,6 +156,6 @@ export const LinksContainer = styled.div`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-    margin-top: -6em;
+    margin-top: -3em;
   }
 `;
