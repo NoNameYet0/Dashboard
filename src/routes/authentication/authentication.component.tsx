@@ -1,5 +1,4 @@
-import Button from "../../components/button/button.component";
-import FormInput from "../../components/form-input/form-input.component";
+import SignInForm from "../../components/sign-in-form/sign-in-form.component";
 
 import { AuthContainer, AuthFormsContainer } from "./authentication.styles";
 
@@ -7,10 +6,7 @@ const Authentication = () => {
   return (
     <AuthContainer>
       <AuthFormsContainer>
-        <span>Sign in to the Dashboard</span>
-        <FormInput label="email" />
-        <FormInput label="password" />
-        <Button>Sign In</Button>
+        <SignInForm />
       </AuthFormsContainer>
     </AuthContainer>
   );
