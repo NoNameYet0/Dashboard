@@ -14,6 +14,7 @@ import Settings from "./routes/settings/settings.component";
 import Home from "./routes/home/home.component";
 import Authentication from "./routes/authentication/authentication.component";
 import { Layout } from "./routes/layout/layout.component";
+import ForgetPassword from "./routes/forget-password/forget-password.component";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route path="auth" element={<Authentication />} />
+            <Route path="forget-password" element={<ForgetPassword />} />
             <Route index element={<Home />} />
             <Route path="trainees" element={<TraineeManagement />} />
             <Route path="equipment" element={<EquipmentManagement />} />
