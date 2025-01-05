@@ -10,6 +10,7 @@ import {
   ErrorsList,
   ForgetPasswordText,
   SignInFormContainer,
+  StyledSpan,
 } from "./sign-in-form.styles";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { loginSchema } from "../../utils/yup/yup.utils";
@@ -56,7 +57,7 @@ const SignInForm = () => {
           <ErrorCard key={index}>{error.message}</ErrorCard>
         ))}
       </ErrorsList>
-      <span>Sign in to the Dashboard</span>
+      <StyledSpan>Sign in to the Dashboard</StyledSpan>
       <FormInput
         label="email"
         formInputType={FormInputTypes.AuthInput}

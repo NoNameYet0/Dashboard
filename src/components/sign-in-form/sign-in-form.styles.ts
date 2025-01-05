@@ -9,18 +9,19 @@ export const SignInFormContainer = styled.form`
   gap: 1.5em;
   width: 100%;
   height: 100%;
-  span {
-    ${XXLargeFontSize}
-    font-weight: ${({ theme }) => theme.typography.fontWeight.bold};
+`;
+
+export const StyledSpan = styled.span`
+  ${XXLargeFontSize}
+  font-weight: ${({ theme }) => theme.typography.fontWeight.light};
+  display: none;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    display: block;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     display: none;
-
-    @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-      display: block;
-    }
-
-    @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-      display: none;
-    }
   }
 `;
 
@@ -34,9 +35,8 @@ export const ErrorsList = styled.div`
 `;
 
 export const ForgetPasswordText = styled.p`
-  color: black;
   position: absolute;
-  bottom: 28%;
+  bottom: calc(50vh - 4.5em);
   cursor: pointer;
   text-decoration: underline;
   &:hover {
@@ -44,6 +44,10 @@ export const ForgetPasswordText = styled.p`
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    bottom: 14.5%;
+    bottom: calc(50vh - 7em);
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    bottom: calc(50vh - 4.5em);
   }
 `;

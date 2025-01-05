@@ -11,11 +11,11 @@ export const FormInputContainer = styled.div`
   gap: 0.5em;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    width: 80%;
+    width: 100%;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-    align-items: flex-start;
+    width: 90%;
   }
 `;
 
@@ -30,7 +30,7 @@ export const StyledLabel = styled.label`
 `;
 
 export const AuthInput = styled.input`
-  width: 100%;
+  width: 80%;
   height: 3em;
   border-radius: 2em;
   padding: 1em;

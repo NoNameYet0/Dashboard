@@ -3,7 +3,7 @@ import { LargeFontSize, XLargeFontSize } from "../../styles/general.styles";
 
 export const BasicButton = styled.button`
   ${LargeFontSize}
-  width: 350px;
+  width: 80%;
   height: 10%;
   border-radius: 2em;
   border: none;
@@ -18,5 +18,9 @@ export const BasicButton = styled.button`
     ${XLargeFontSize}
     width: 80%;
     height: 2.5em;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    width: 72%;
   }
 `;

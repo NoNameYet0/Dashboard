@@ -15,12 +15,11 @@ export const AuthFormsContainer = styled.div`
   ${SecondaryColors}
   border-radius: 26px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  min-width: 550px;
-  height: 40%;
+  height: 500px;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    width: ${({ theme }) => theme.grid.col5};
-    height: 65%;
+    width: 550px;
+    height: 550px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
