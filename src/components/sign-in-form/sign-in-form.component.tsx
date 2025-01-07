@@ -48,7 +48,6 @@ const SignInForm = () => {
   };
 
   const errorsArray = Object.values(errors);
-  console.log(errorsArray);
 
   return (
     <SignInFormContainer onSubmit={handleSubmit(onSubmit)}>
