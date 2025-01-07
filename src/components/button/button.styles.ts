@@ -10,7 +10,7 @@ export const BasicButton = styled.button`
   margin-top: 2em;
 
   &:hover {
-    border: 3px solid black;
+    outline: 3px solid black;
     opacity: 0.8;
   }
 
