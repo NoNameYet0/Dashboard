@@ -5,9 +5,9 @@ import Button from "../button/button.component";
 
 import { FormInputTypes } from "../form-input/form-input.types";
 import { ButtonTypes } from "../button/button.types";
+import { ErrorsList } from "../error-list/error-list.styles";
 
 import {
-  ErrorsList,
   ForgetPasswordText,
   SignInFormContainer,
   StyledSpan,
@@ -51,11 +51,13 @@ const SignInForm = () => {
 
   return (
     <SignInFormContainer onSubmit={handleSubmit(onSubmit)}>
-      <ErrorsList>
-        {errorsArray.map((error, index) => (
-          <ErrorCard key={index}>{error.message}</ErrorCard>
-        ))}
-      </ErrorsList>
+      {errorsArray && (
+        <ErrorsList>
+          {errorsArray.map((error, index) => (
+            <ErrorCard key={index}>{error.message}</ErrorCard>
+          ))}
+        </ErrorsList>
+      )}
       <StyledSpan>Sign in to the Dashboard</StyledSpan>
       <FormInput
         label="email"

@@ -9,6 +9,10 @@ export const SignInFormContainer = styled.form`
   gap: 1.5em;
   width: 100%;
   height: 100%;
+
+  button {
+    height: 56px;
+  }
 `;
 
 export const StyledSpan = styled.span`
@@ -23,15 +27,6 @@ export const StyledSpan = styled.span`
   @media (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     display: none;
   }
-`;
-
-export const ErrorsList = styled.div`
-  position: absolute;
-  top: 2em;
-  left: 2em;
-  width: 300px;
-  height: 10em;
-  padding: 1em;
 `;
 
 export const ForgetPasswordText = styled.p`

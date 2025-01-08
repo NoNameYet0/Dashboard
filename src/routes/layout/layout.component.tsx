@@ -4,12 +4,19 @@ import Navigation from "../navigation/navigation.component";
 export const Layout = () => {
   const location = useLocation();
   const isAuthRoute = location.pathname.startsWith("/auth");
-  const isForgetPasswordRoute =
-    location.pathname.startsWith("/forget-password");
+  const isForgetPasswordRoute = location.pathname.startsWith("/forget-password");
+  const isVerifyCodeRoute = location.pathname.startsWith("/verify-code");
+  const isNewPasswordRoute = location.pathname.startsWith("/new-password");
 
   return (
     <>
-      {!isAuthRoute && !isForgetPasswordRoute && <Navigation />}
+      {
+       !isAuthRoute &&
+       !isForgetPasswordRoute &&
+       !isVerifyCodeRoute &&
+       !isNewPasswordRoute && 
+       <Navigation />
+       }
       <Outlet />
     </>
   );

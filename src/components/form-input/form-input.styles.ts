@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import {
   CenteredColFlexContainer,
+  LargeFontSize,
   XLargeFontSize,
-  XXLargeFontSize,
 } from "../../styles/general.styles";
 
 export const FormInputContainer = styled.div`
@@ -20,12 +20,12 @@ export const FormInputContainer = styled.div`
 `;
 
 export const StyledLabel = styled.label`
-  ${XLargeFontSize}
+  ${LargeFontSize}
   font-weight: ${({ theme }) => theme.typography.fontWeight.regular};
   cursor: pointer;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    ${XXLargeFontSize}
+    ${XLargeFontSize}
   }
 `;
 

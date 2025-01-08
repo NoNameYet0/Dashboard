@@ -21,11 +21,11 @@ const theme: DefaultTheme = {
   typography: {
     fontFamily: "'Roboto', sans-serif",
     fontSize: {
-      small: "12px", // Small font size
-      medium: "16px", // Medium font size
-      large: "22px", // Large font size
-      xlarge: "24px", // Extra large font size
-      xxlarge: "32px", // Extra extra large font size
+      small: "10px", // Small font size
+      medium: "14px", // Medium font size
+      large: "20px", // Large font size
+      xlarge: "22px", // Extra large font size
+      xxlarge: "30px", // Extra extra large font size
     },
     fontWeight: {
       light: "300", // Light font weight

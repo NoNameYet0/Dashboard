@@ -15,6 +15,8 @@ import Home from "./routes/home/home.component";
 import Authentication from "./routes/authentication/authentication.component";
 import { Layout } from "./routes/layout/layout.component";
 import ForgetPassword from "./routes/forget-password/forget-password.component";
+import VerifyCode from "./routes/verify-code/verify-code.component";
+import NewPassword from "./routes/new-password/new-password.component";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route path="auth" element={<Authentication />} />
             <Route path="forget-password" element={<ForgetPassword />} />
+            <Route path="verify-code" element={<VerifyCode />} />
+            <Route path="new-password" element={<NewPassword />} />
             <Route index element={<Home />} />
             <Route path="trainees" element={<TraineeManagement />} />
             <Route path="equipment" element={<EquipmentManagement />} />
